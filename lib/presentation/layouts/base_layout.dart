@@ -13,7 +13,7 @@ class BaseLayout extends StatelessWidget {
       tabBar: CupertinoTabBar(
         backgroundColor: Theme.of(context).primaryColor,
         height: 45.h,
-        border: const Border(top: BorderSide(color: ColorManager.grayL1)),
+        border: const Border(top: BorderSide(color: ColorManager.whiteD2)),
         items: const [],
       ),
       tabBuilder: (context, index) => const _HomePage(),
