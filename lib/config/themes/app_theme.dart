@@ -8,29 +8,28 @@ class AppTheme {
   static ThemeData get light {
     return ThemeData(
       primaryColor: ColorManager.white,
-      primaryColorLight: ColorManager.lightGrey,
+      primaryColorLight: ColorManager.whiteD2,
       hintColor: ColorManager.grey,
-      shadowColor: ColorManager.veryLowOpacityGrey,
+      shadowColor: ColorManager.blackOp10,
       focusColor: ColorManager.black,
-      disabledColor: ColorManager.black54,
-      dialogBackgroundColor: ColorManager.black87,
-      hoverColor: ColorManager.black45,
-      indicatorColor: ColorManager.black38,
-      dividerColor: ColorManager.black12,
+      disabledColor: ColorManager.blackOp50,
+      dialogBackgroundColor: ColorManager.blackOp90,
+      hoverColor: ColorManager.blackOp50,
+      indicatorColor: ColorManager.blackOp40,
+      dividerColor: ColorManager.blackOp10,
       scaffoldBackgroundColor: ColorManager.white,
       iconTheme: const IconThemeData(color: ColorManager.black),
       outlinedButtonTheme: outlinedButtonTheme(),
       elevatedButtonTheme: elevatedButtonThemeData(),
-      chipTheme:
-          const ChipThemeData(backgroundColor: ColorManager.veryLowOpacityGrey),
+      chipTheme: const ChipThemeData(backgroundColor: ColorManager.blackOp10),
       canvasColor: ColorManager.transparent,
       splashColor: ColorManager.white,
       appBarTheme: appBarTheme(),
       tabBarTheme: tabBarTheme(),
       textTheme: textTheme(),
-      bottomAppBarTheme: const BottomAppBarTheme(color: ColorManager.black26),
+      bottomAppBarTheme: const BottomAppBarTheme(color: ColorManager.blackOp30),
       colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)
-          .copyWith(background: ColorManager.lightBlack)
+          .copyWith(background: ColorManager.blackL4)
           .copyWith(error: ColorManager.black),
     );
   }
@@ -41,7 +40,7 @@ class AppTheme {
             fixedSize:
                 MaterialStateProperty.all<Size>(Size(double.maxFinite, 45.h)),
             backgroundColor: MaterialStateProperty.resolveWith<Color?>(
-                (_) => ColorManager.lightGrey),
+                (_) => ColorManager.whiteD2),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 const RoundedRectangleBorder(
                     borderRadius: BorderRadius.zero))));
@@ -80,7 +79,7 @@ class AppTheme {
       titleSpacing: 5.w,
       toolbarHeight: 55.h,
       color: ColorManager.white,
-      shadowColor: ColorManager.black54,
+      shadowColor: ColorManager.blackOp50,
       iconTheme: const IconThemeData(color: ColorManager.black),
       titleTextStyle:
           getRegularStyle(fontSize: FontSize.s16, color: ColorManager.black),
@@ -93,7 +92,7 @@ class AppTheme {
         textStyle: getMediumStyle(fontSize: 17),
         padding: const EdgeInsets.symmetric(horizontal: 20),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
-        side: const BorderSide(width: 1, color: ColorManager.black45),
+        side: const BorderSide(width: 1, color: ColorManager.blackOp50),
       ),
     );
   }
