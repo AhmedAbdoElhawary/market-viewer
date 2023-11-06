@@ -1,7 +1,7 @@
-import 'package:market_viewer/presentation/layouts/base_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market_viewer/config/themes/app_theme.dart';
+import 'package:market_viewer/presentation/pages/views/home/home_page.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
           title: 'Market Viewer',
           theme: AppTheme.light,
           debugShowCheckedModeBanner: false,
-          home: const BaseLayout(),
+          home: const HomePage(),
         );
       },
     );
