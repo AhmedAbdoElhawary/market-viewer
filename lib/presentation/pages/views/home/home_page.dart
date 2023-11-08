@@ -27,9 +27,9 @@ class HomePage extends StatelessWidget {
               Flexible(
                 child: TabBarView(
                   children: [
+                    _CryptoCurrenciesTabBarView(),
                     _StockTabBarView(),
                     _CurrenciesTabBarView(),
-                    _CryptoCurrenciesTabBarView(),
                     _CommoditiesTabBarView(),
                   ],
                 ),
