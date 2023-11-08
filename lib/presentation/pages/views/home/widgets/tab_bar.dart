@@ -18,9 +18,9 @@ class _TabBar extends StatelessWidget {
               getRegularStyle(fontSize: FontSize.s14, color: ColorManager.grey),
           labelStyle: getRegularStyle(fontSize: FontSize.s14),
           tabs: const [
+            Tab(text: "Cryptocurrencies"),
             Tab(text: "Stock"),
             Tab(text: "Currencies"),
-            Tab(text: "Cryptocurrencies"),
             // gold, sliver erc..
             Tab(text: "Commodities"),
           ],
