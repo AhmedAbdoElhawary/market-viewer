@@ -28,9 +28,6 @@ class HomePage extends StatelessWidget {
                 child: TabBarView(
                   children: [
                     _CryptoCurrenciesTabBarView(),
-                    _StockTabBarView(),
-                    _CurrenciesTabBarView(),
-                    _CommoditiesTabBarView(),
                   ],
                 ),
               ),
