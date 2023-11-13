@@ -1,1 +1,1 @@
-const String baseUrl = "http://10.0.2.2:8500/api/v1/";
+const String cryptoBaseUrl = "https://pro-api.coinmarketcap.com/v1/";
