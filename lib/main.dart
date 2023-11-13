@@ -1,4 +1,6 @@
+import 'package:bloc/bloc.dart';
 import 'package:market_viewer/core/utility/injector.dart';
+import 'package:market_viewer/core/widgets/bloc_observer.dart';
 import 'package:market_viewer/my_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -14,12 +16,12 @@ Future<void> main() async {
 
 Future<void> init() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  await Future.wait([
-    initializeDependencies(),
-
-    /// todo: add any await prepare here
-  ]);
+  initializeDependencies();
+  Bloc.observer = MyBlocObserver();
+  //
+  // await Future.wait([
+  //   /// add any await prepare here
+  // ]);
 
   /// here i remove landscape mode
   SystemChrome.setPreferredOrientations(
